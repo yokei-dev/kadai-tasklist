@@ -2,6 +2,7 @@
 
 <h2><%=@task.id%></h2>
 <h2><%=@task.content%></h2>
+<h2><%=@task.status%></h2>
 <%= link_to '編集', edit_task_path %>
 <%= link_to '削除', @task, method: :delete, data: {confirm: '本当に削除してよろしいですか?'} %>
 
