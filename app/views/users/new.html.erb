@@ -3,16 +3,16 @@
 <%= form_with(model: @user, local: true) do |f| %>
     <%= render 'layouts/error_messages', model: f.object %>
 
-    <%= f.label :name, 'name' %>
+    <%= f.label :name, '名前' %>
     <%= f.text_field :name %>
     
-    <%= f.label :email, 'email' %>
+    <%= f.label :email, 'メール' %>
     <%= f.email_field :email %>
     
-    <%= f.label :password, 'password' %>
+    <%= f.label :password, 'パスワード' %>
     <%= f.password_field :password %>
     
-    <%= f.label :password_confirmation, 'confirmation' %>
+    <%= f.label :password_confirmation, 'パスワード確認' %>
     <%= f.password_field :password_confirmation %>
     
     <%= f.submit 'Sign up' %>
